@@ -1,0 +1,30 @@
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+
+:root {
+    --primary: rgb(45, 107, 220);
+    --white: rgb(255, 255, 255);
+
+    --tag-color: var(--primary);
+    --tag-font-color: var(--white);
+}
+
+[data-tag-id] .note-count-label::before {
+    content: "(";
+}
+
+[data-tag-id] .note-count-label::after {
+    content: ")";
+}
+
+.tag-list > button {
+    background-color: var(--tag-color) !important;
+    color: var(--tag-font-color) !important;
+}
+
+.tag-selector > div > div > div > div > div {
+    color: var(--tag-font-color) !important;
+}
+
+.tag-selector > div > div > div > div {
+    background-color: var(--tag-color) !important;
+}
